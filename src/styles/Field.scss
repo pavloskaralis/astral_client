@@ -1,0 +1,57 @@
+@import './variables';
+
+.field-wrap {
+    @extend .vertical-align;
+    width: 100%;
+    margin-bottom: 12px;
+
+    .field-top{
+        display: flex;
+        margin-bottom: 6px;
+        .field-label{
+            @extend .vertical-align;
+            justify-content: flex-end;
+            width: 50%;
+            font-size: $fontSizeD;
+            font-family: $fontA;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $black;
+            cursor: default;
+            @media(max-width: $breakpointE) {
+                font-size: 16px;
+            }
+            @media(max-width: $breakpointF) {
+                font-size: 14px;
+            }
+        }
+        .field-input{       
+            width: 50%;
+            height: 50px;
+            border: none;
+            outline: none;
+            padding: 0 12px;
+            background-color: $white;
+            box-sizing: border-box;
+            font-family: $fontB;
+            font-size: $fontSizeD;
+            color: $black;
+            box-shadow: inset 0 0 2.5px 0 rgba(black, 0.5);
+            @media(max-width: $breakpointE) {
+                font-size: 16px;
+            }
+            @media(max-width: $breakpointF) {
+                font-size: 14px;
+            }
+        }
+    }
+    .field-bottom{
+        color: $blue;
+        font-family: $fontA;
+        font-size: $fontSizeE;
+        cursor: default;
+        @media(max-width: $breakpointF) {
+            font-size: 11px;
+        }
+    }
+}

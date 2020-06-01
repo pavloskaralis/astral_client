@@ -1,0 +1,68 @@
+@import './variables';
+
+.leave-container {
+    @extend .vertical-align;
+    justify-content: center;
+    width: 50%;
+    height: 100%;   
+    min-height: $minHeight;
+    background-color: rgba($black,.7);
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    padding: 24px;
+    box-sizing: border-box;
+
+    @media(max-width: $breakpointB) {
+        width: 100%;
+    }
+
+    .leave {
+        margin: 0 auto;
+        max-width: $breakpointE;
+        width: 100%;
+        background-color: $gray;
+        border-radius: 24px; 
+        padding: 24px;
+        box-sizing: border-box;
+        box-shadow: $shadow; 
+
+        .leave-title {
+            font-family: $fontA;
+            font-size: $fontSizeB;
+            margin-bottom: 24px;
+            text-align: center;
+            font-weight: 600;
+            color: $black;
+            text-transform: capitalize;
+            cursor: default;
+            @media(max-width: $breakpointF) {
+                font-size: 30px;
+            }
+        }
+
+        .leave-message {
+            @extend .vertical-align;
+            margin-top: 24px;
+            text-align: center;
+            font-family: $fontA;
+            font-size: $fontSizeD;
+            font-weight: 600;
+            color: $blue;
+            cursor: default;
+            @media(max-width: $breakpointE) {
+                font-size: 16px;
+            }
+            @media(max-width: $breakpointF) {
+                font-size: 14px;
+            }
+        }
+
+        .leave-button-wrap{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 24px;
+        }
+    }
+}

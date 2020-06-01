@@ -1,0 +1,34 @@
+$breakpointA: 1200px;
+$breakpointB: 992px;
+$breakpointC: 768px;
+$breakpointD: 576px;
+$breakpointE: 500px;
+$breakpointF: 410px;
+$breakpointG: 320px;
+
+$fontA: 'Verdana';
+$fontB: 'Courier';
+
+$shadow: 0;
+
+$minHeight: 480px; 
+
+$fontSizeA: 64px;
+$fontSizeB: 34px;
+$fontSizeC: 24px;
+$fontSizeD: 20px;
+$fontSizeE: 14px;
+
+$transition: .25s;
+
+.vertical-align {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+$gray: rgb(195,200,205);
+$red: rgb(235,65,55);
+$white: rgb(245,245,245);
+$black: rgb(35,40,45);
+$blue: rgb(55,65,75);

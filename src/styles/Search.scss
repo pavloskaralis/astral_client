@@ -1,0 +1,54 @@
+@import './variables';
+
+.search {
+    @extend .vertical-align;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $breakpointE;
+    border-radius: 24px;
+    position: relative;
+    box-shadow: $shadow;
+
+    .search-input {
+        height: 50px;
+        background-color: $white;  
+        justify-content: flex-end;
+        border: none;
+        outline: none;
+        padding-left: 18px;
+        padding-right: 52px;
+        box-sizing: border-box;
+        font-family: $fontB;
+        font-size: $fontSizeD;
+        color: $black;
+        box-shadow: inset 0 0 2.5px 0 rgba(black, 0.5);
+        width: 100%;
+        border-radius: 24px;
+        @media(max-width: $breakpointE) {
+            font-size: 16px;
+        }
+        @media(max-width: $breakpointF) {
+            font-size: 14px;
+        }
+    }
+
+    .search-icon {
+        background-size: cover;
+        background-color: $white;
+        background-repeat: no-repeat;
+        background-image: url('../resources/search.png');
+        min-width: 42px;
+        height: 42px;
+        border-radius: 42px;
+        position: absolute;
+        right: 6px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $gray;
+        }
+    }
+   
+}

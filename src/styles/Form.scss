@@ -1,0 +1,64 @@
+@import './variables';
+
+.form-container {
+    @extend .vertical-align;
+    justify-content: center;
+    width: 50%;
+    height: 100%;   
+    min-height: $minHeight;
+    background-color: rgba($black,.7);
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    padding: 24px;
+    box-sizing: border-box;
+
+    @media(max-width: $breakpointB) {
+        width: 100%;
+    }
+
+    .form {
+        margin: 0 auto;
+        max-width: $breakpointE;
+        width: 100%;
+        background-color: $gray;
+        border-radius: 24px; 
+        padding: 24px;
+        box-sizing: border-box;
+        box-shadow: $shadow; 
+
+        .form-title {
+            font-family: $fontA;
+            font-size: $fontSizeB;
+            margin-bottom: 24px;
+            text-align: center;
+            font-weight: 600;
+            color: $black;
+            cursor: default;
+            @media(max-width: $breakpointF) {
+                font-size: 30px;
+            }
+        }
+
+        .form-error {
+            @extend .vertical-align;
+            margin-top: 24px;
+            text-align: center;
+            font-family: $fontA;
+            font-size: $fontSizeE;
+            font-weight: 600;
+            color: $red;
+            cursor: default;
+            @media(max-width: $breakpointF) {
+                font-size: 11px;
+            }
+        }
+
+        .form-button-wrap{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 24px;
+        }
+    }
+}
