@@ -25,7 +25,7 @@ function App() {
   },[])
 
   const connectLobby = async () => {
-    const webSocket = await new WebSocket('ws://localhost:8000/ws/astral/');
+    const webSocket = await new WebSocket('ws://astral-backend.herokuapp.com//ws/astral/');
 
     webSocket.onmessage = async (e) => {
       // console.log('lobby connected')
