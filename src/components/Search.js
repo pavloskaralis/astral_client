@@ -24,7 +24,6 @@ function Search({onClick}) {
   return (
     <div className="search" onKeyPress={onKeyPress}>
         <input 
-          autoFocus
           className="search-input" 
           value={search} 
           onChange={onChange}

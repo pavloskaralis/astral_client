@@ -194,6 +194,7 @@ function Chat({connectLobby,toggleLobby,setError,setForm,setLeave,toggleRemove})
             </div>
 
             <textarea 
+                autoFocus
                 onChange={onChange}
                 onKeyPress={onKeyPress}
                 value={messageValue} 
