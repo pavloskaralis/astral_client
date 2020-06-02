@@ -25,7 +25,7 @@ function App() {
   },[])
 
   const connectLobby = async () => {
-    const webSocket = await new WebSocket('ws://redis://h:p5f254f21f7efac9b38d97a5747e6647cad99bb6fa61cc1ddc10191fb890e1b30@ec2-54-83-60-18.compute-1.amazonaws.com:20659/ws/astral/');
+    const webSocket = await new WebSocket('wss://redis://h:p5f254f21f7efac9b38d97a5747e6647cad99bb6fa61cc1ddc10191fb890e1b30@ec2-54-83-60-18.compute-1.amazonaws.com:20659/ws/astral/');
 
     webSocket.onmessage = async (e) => {
       // console.log('lobby connected')
