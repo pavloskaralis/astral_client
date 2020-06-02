@@ -26,7 +26,9 @@ function Chat({connectLobby,toggleLobby,setError,setForm,setLeave,toggleRemove})
         const roomName = splitUrl[1];
         setRoomNaame(roomName.replace(/_/g,' '));
         const webSocket = await new WebSocket( 
-            'ws://redis://redistogo:325d2c728a187f37c2ae5daa0eb3e70d@pike.redistogo.com:11276/'
+            'ws://'
+            + 'astral-backend.herokuapp.com/'
+            + 'ws/astral/'
             + roomHash
             + '/'
             + roomName
