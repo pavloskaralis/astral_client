@@ -26,7 +26,7 @@ function Chat({connectLobby,toggleLobby,setError,setForm,setLeave,toggleRemove})
         const roomName = splitUrl[1];
         setRoomNaame(roomName.replace(/_/g,' '));
         const webSocket = await new WebSocket( 
-            'wss://redis://h:p5f254f21f7efac9b38d97a5747e6647cad99bb6fa61cc1ddc10191fb890e1b30@ec2-54-83-60-18.compute-1.amazonaws.com:20659'
+            'ws://redis://redistogo:325d2c728a187f37c2ae5daa0eb3e70d@pike.redistogo.com:11276/'
             + roomHash
             + '/'
             + roomName
